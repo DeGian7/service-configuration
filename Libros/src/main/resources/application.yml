@@ -24,6 +24,14 @@ spring:
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
 
+config:
+  uri: http://localhost:8884
+  fail-fast: true
+  retry:
+    max-attempts: 20
+    max-interval: 15000
+    initial-interval: 10000
+
   #Configuracion de persistencia
   jpa:
     properties:
